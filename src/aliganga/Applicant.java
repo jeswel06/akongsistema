@@ -1,14 +1,15 @@
-
 package aliganga;
-
 
 public class Applicant {
     private int id;
     private String name;
     private String email;
     private String phone;
+    private String resume;
+    private String applicationDate;
+    private String status;
 
-    
+   
     public int getId() {
         return id;
     }
@@ -41,13 +42,27 @@ public class Applicant {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return "Applicant {" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
+    public String getResume() {
+        return resume;
+    }
+
+    public void setResume(String resume) {
+        this.resume = resume;
+    }
+
+    public String getApplicationDate() {
+        return applicationDate;
+    }
+
+    public void setApplicationDate(String applicationDate) {
+        this.applicationDate = applicationDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

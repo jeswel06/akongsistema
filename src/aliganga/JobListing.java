@@ -1,7 +1,4 @@
-
 package aliganga;
-
-
 
 public class JobListing {
     private int id;
@@ -9,6 +6,9 @@ public class JobListing {
     private String description;
     private String company;
     private String location;
+    private double salary;
+    private String employmentType;
+    private String experienceRequired;
 
     
     public int getId() {
@@ -51,14 +51,27 @@ public class JobListing {
         this.location = location;
     }
 
-    @Override
-    public String toString() {
-        return "JobListing {" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", company='" + company + '\'' +
-                ", location='" + location + '\'' +
-                '}';
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String getEmploymentType() {
+        return employmentType;
+    }
+
+    public void setEmploymentType(String employmentType) {
+        this.employmentType = employmentType;
+    }
+
+    public String getExperienceRequired() {
+        return experienceRequired;
+    }
+
+    public void setExperienceRequired(String experienceRequired) {
+        this.experienceRequired = experienceRequired;
     }
 }
